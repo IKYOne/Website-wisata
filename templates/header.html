@@ -1,0 +1,32 @@
+{{define "header"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>IKYOne</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <!-- Logo atau Nama Brand Website -->
+        <div class="nav-brand">
+            <a href="/">IKYOne</a>
+        </div>
+
+        <!-- Daftar Menu Navigasi -->
+        <ul class="nav-links">
+            <li><a href="/" class="active">Beranda</a></li>
+            <li><a href="/dasboard">Dashboard</a></li>
+            <li><a href="/tentang">Tentang</a></li>
+            <li><a href="/destinasi">Destinasi</a></li>
+        </ul>
+
+        <!-- Tombol Aksi di Kanan (Opsional, misal Login/Logout) -->
+        <div class="nav-action">
+            <a href="/login" class="btn-login">Masuk</a>
+        </div>
+    </nav>
+</header>
+{{end}}

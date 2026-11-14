@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - IKYOne</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <h2>Silakan Masuk</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Username / Email</label>
+                <input type="text" id="username" name="username" required placeholder="Masukkan username...">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Masukkan password...">
+            </div>
+            
+            <button type="submit" class="btn-submit">Login</button>
+            
+        </form>
+        <p style="text-align: center; margin-top: 16px; font-size: 14px;">
+            Belum punya akun? <a href="/register" style="color: #2563eb; text-decoration: none;">Daftar sekarang</a>
+        </p>
+    </div>
+</body>
+</html>

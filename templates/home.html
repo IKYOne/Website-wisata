@@ -1,0 +1,53 @@
+{{define "Content"}}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Selamat Datang - IKYOne</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Bagian Hero / Utama -->
+    <!-- <div class="hero-section" style="text-align: center; margin-top: 80px; padding: 0 20px;">
+        <h1>Selamat Datang di Website Kami</h1>
+        <p>Silakan mulai sesi Anda atau pelajari lebih lanjut tentang aplikasi ini.</p>
+        
+        <!-- Tombol Aksi -->
+        <!-- <div style="margin-top: 24px; display: flex; justify-content: center; gap: 16px;">
+            <a href="/login" class="btn-mulai">Mulai Sekarang</a>
+            <!-- Tombol More Info yang mengarah ke id="info" di halaman yang sama -->
+            <!-- <a href="#info" class="btn-secondary">More Info</a>
+        </div>
+    </div> --> 
+
+    <!-- Bagian Hero / Utama dengan Background Image -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Selamat Datang di Website Kami</h1>
+            <p>Silakan mulai sesi Anda atau pelajari lebih lanjut tentang aplikasi ini.</p>
+            
+            <div class="hero-buttons">
+                <a href="/login" class="btn-mulai">Mulai Sekarang</a>
+                <a href="#info" class="btn-secondary">More Info</a>
+            </div>
+        </div>
+    </div>
+    <!-- Bagian Informasi (Tetap di halaman ini) -->
+    <section id="info" style="max-width: 800px; margin: 120px auto 40px auto; padding: 40px; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h2>Tentang Aplikasi Ini</h2>
+        <p>Aplikasi web ini dibangun menggunakan bahasa pemrograman Golang dengan standar modul bawaan (<code style="background:#e5e7eb; padding:2px 6px; border-radius:4px;">net/http</code>) dan HTML/CSS murni tanpa tambahan *framework* eksternal.</p>
+        
+        <div style="margin: 30px 0; text-align: center;">
+            <img src="/static/img/Logo.jpg" alt="Preview Aplikasi IKYOne" style="width: 100%; max-width: 500px; border-radius: 6px; border: 1px solid #e5e7eb; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        </div>
+
+        <h3 style="margin-top: 24px;">Fitur Utama:</h3>
+        <ul style="line-height: 1.8; color: #4b5563;">
+            <li>Sistem autentikasi mandiri (Login & Register berbasis *in-memory slice*).</li>
+            <li>Navigasi dan tata letak responsif menggunakan konsep Flexbox CSS.</li>
+            <li>Routing bersih dan modern menggunakan fitur bawaan Go.</li>
+        </ul>
+    </section>
+</body>
+</html>
+{{end}}
